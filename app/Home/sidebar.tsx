@@ -67,6 +67,11 @@ export const SideNavRailWHeader = (args) => (
               <Notification size={20} />
             </HeaderGlobalAction>
             <HeaderGlobalAction
+            >
+             <UserProfile />
+            </HeaderGlobalAction>
+            
+            <HeaderGlobalAction
               aria-label="App Switcher"
               
               tooltipAlignment="end"
@@ -109,9 +114,14 @@ export const SideNavRailWHeader = (args) => (
               <SideNavLink renderIcon={Fade} href="https://www.carbondesignsystem.com/">
                 Support
               </SideNavLink>
+              <SideNavLink renderIcon={Fade}>
+                <UserProfile />
+              </SideNavLink>
             </SideNavItems>
           </SideNav>
+          <UserProfile />
         </Header>
+
       </>
     )}
   />
