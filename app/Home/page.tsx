@@ -4,7 +4,7 @@ import UserProfile from '../user-profile/page'
 
 export default function Page() {
   return (
-    <UserProfile />
+    <Sidebar />
     // <main className="flex min-h-screen w-full items-center justify-between">
     //   <div className="mx-auto">
     //     <SignIn />
