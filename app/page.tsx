@@ -1,23 +1,31 @@
-// app/page.tsx
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import './globals.css'
+"use client"
+import Link from 'next/link';
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs';
+import { Component } from 'react';
 
 interface PageProps {
-  pageProps: {
-    publishableKey: string
-    [key: string]: any
-  }
+  pageProps: any;
 }
 
-export default function Page({ pageProps }: PageProps) {
-  return (
-    <ClerkProvider {...pageProps}>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-    </ClerkProvider>
-  )
+export default class Page extends Component<PageProps> {
+  render() {
+    const { pageProps } = this.props;
+    return (
+      <ClerkProvider>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <Component {...pageProps} publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY} secretKey={process.env.CLERK_SECRET_KEY} ></Component>
+      </ClerkProvider>
+    );
+  }
 }
