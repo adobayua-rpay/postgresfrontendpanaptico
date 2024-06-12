@@ -31,7 +31,7 @@ import {
   DataCenter,
   Switcher as SwitcherIcon,
 } from "@carbon/icons-react";
-import '@carbon/charts/styles.css';
+// import '@carbon/charts/styles.css';
 export const SideNavRailWHeader = (args) => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
