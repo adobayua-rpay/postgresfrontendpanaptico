@@ -13,13 +13,13 @@ importers:
         version: 11.43.0(react@18.2.0)
       '@carbon/react':
         specifier: ^1.59.0
-        version: 1.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+        version: 1.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
       '@clerk/nextjs':
         specifier: ^5.1.4
-        version: 5.1.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 5.1.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/next':
         specifier: ^9.0.0
-        version: 9.0.0(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+        version: 9.0.0(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
       '@types/node':
         specifier: ^20.10.5
         version: 20.10.5
@@ -37,13 +37,13 @@ importers:
         version: 0.29.2(@types/react@18.2.45)(expo-sqlite@13.2.0(expo@49.0.21(@babel/core@7.23.6)))(postgres@3.4.3)(react@18.2.0)
       geist:
         specifier: ^1.2.0
-        version: 1.2.0(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5))
+        version: 1.2.0(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6))
       next:
         specifier: ^14.0.4
-        version: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+        version: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
       next-auth:
         specifier: 5.0.0-beta.4
-        version: 5.0.0-beta.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5))(react@18.2.0)
+        version: 5.0.0-beta.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6))(react@18.2.0)
       postgres:
         specifier: ^3.4.3
         version: 3.4.3
@@ -53,6 +53,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      sass:
+        specifier: 1.63.6
+        version: 1.63.6
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -3427,8 +3430,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.77.5:
-    resolution: {integrity: sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==}
+  sass@1.63.6:
+    resolution: {integrity: sha512-MJuxGMHzaOW7ipp+1KdELtqKbfAWbH7OLIdoSMnVe3EXPMTmxTmlaZDCTsgIpPCs3w99lLo9/zDKkOrJuT5byw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4927,13 +4930,13 @@ snapshots:
     dependencies:
       '@ibm/telemetry-js': 1.5.2
 
-  '@carbon/react@1.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)':
+  '@carbon/react@1.59.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)':
     dependencies:
       '@babel/runtime': 7.23.6
       '@carbon/feature-flags': 0.20.0
       '@carbon/icons-react': 11.43.0(react@18.2.0)
       '@carbon/layout': 11.22.0
-      '@carbon/styles': 1.59.0(sass@1.77.5)
+      '@carbon/styles': 1.59.0(sass@1.63.6)
       '@floating-ui/react': 0.26.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@ibm/telemetry-js': 1.5.2
       classnames: 2.5.1
@@ -4950,13 +4953,13 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-is: 18.3.1
-      sass: 1.77.5
+      sass: 1.63.6
       tabbable: 6.2.0
       use-resize-observer: 6.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       wicg-inert: 3.1.2
       window-or-global: 1.0.1
 
-  '@carbon/styles@1.59.0(sass@1.77.5)':
+  '@carbon/styles@1.59.0(sass@1.63.6)':
     dependencies:
       '@carbon/colors': 11.22.0
       '@carbon/feature-flags': 0.20.0
@@ -4968,7 +4971,7 @@ snapshots:
       '@ibm/plex': 6.0.0-next.6
       '@ibm/telemetry-js': 1.5.2
     optionalDependencies:
-      sass: 1.77.5
+      sass: 1.63.6
 
   '@carbon/themes@11.36.0':
     dependencies:
@@ -5003,14 +5006,14 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       tslib: 2.4.1
 
-  '@clerk/nextjs@5.1.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@clerk/nextjs@5.1.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@clerk/backend': 1.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@clerk/clerk-react': 5.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@clerk/shared': 2.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@clerk/types': 4.6.0
       crypto-js: 4.2.0
-      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
       path-to-regexp: 6.2.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5507,9 +5510,9 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/next@9.0.0(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)':
+  '@types/next@9.0.0(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)':
     dependencies:
-      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
     transitivePeerDependencies:
       - '@babel/core'
       - '@opentelemetry/api'
@@ -6737,9 +6740,9 @@ snapshots:
 
   functions-have-names@1.2.3: {}
 
-  geist@1.2.0(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)):
+  geist@1.2.0(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)):
     dependencies:
-      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
 
   gensync@1.0.0-beta.2: {}
 
@@ -7434,13 +7437,13 @@ snapshots:
 
   nested-error-stacks@2.0.1: {}
 
-  next-auth@5.0.0-beta.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5))(react@18.2.0):
+  next-auth@5.0.0-beta.4(next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6))(react@18.2.0):
     dependencies:
       '@auth/core': 0.18.4
-      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5)
+      next: 14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6)
       react: 18.2.0
 
-  next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.5):
+  next@14.0.4(@babel/core@7.23.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.63.6):
     dependencies:
       '@next/env': 14.0.4
       '@swc/helpers': 0.5.2
@@ -7462,7 +7465,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 14.0.4
       '@next/swc-win32-ia32-msvc': 14.0.4
       '@next/swc-win32-x64-msvc': 14.0.4
-      sass: 1.77.5
+      sass: 1.63.6
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -7944,7 +7947,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.77.5:
+  sass@1.63.6:
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.6
