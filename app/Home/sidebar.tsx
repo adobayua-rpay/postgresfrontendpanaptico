@@ -70,14 +70,15 @@ export const SideNavRailWHeader = (args) => (
             >
              <UserProfile />
             </HeaderGlobalAction>
-            
             <HeaderGlobalAction
-              aria-label="App Switcher"
-              
-              tooltipAlignment="end"
-            >
-             <UserProfile />
-            </HeaderGlobalAction>
+  aria-label="App Switcher"
+  style={{
+    flex: 1,
+    justifyContent: 'flex-end',
+  }}
+>
+  <UserProfile />
+</HeaderGlobalAction>
           </HeaderGlobalBar>
           <SideNav
             aria-label="Side navigation"
@@ -119,7 +120,7 @@ export const SideNavRailWHeader = (args) => (
               </SideNavLink>
             </SideNavItems>
           </SideNav>
-          <UserProfile />
+          
         </Header>
 
       </>
