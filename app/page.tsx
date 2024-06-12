@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import {
   ClerkProvider,
@@ -6,20 +5,26 @@ import {
   SignedIn,
   SignedOut,
   UserButton
-} from '@clerk/nextjs'
-import type { AppProps } from 'next/app';
-
+} from '@clerk/nextjs';
 import { Component } from 'react';
-export default function Page() {
-  return (
-    <ClerkProvider>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
-    {/* <Component {...pageProps} /> */}
-  </ClerkProvider>
-  );
+
+interface PageProps {
+  pageProps: any;
+}
+
+export default class Page extends Component<PageProps> {
+  render() {
+    const { pageProps } = this.props;
+    return (
+      <ClerkProvider>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <Component {...pageProps} publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}></Component>
+      </ClerkProvider>
+    );
+  }
 }
