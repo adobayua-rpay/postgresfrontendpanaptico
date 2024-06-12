@@ -48,7 +48,7 @@ export const SideNavRailWHeader = (args) => (
           <HeaderName href="#" prefix="Panaptico">
             [Account]
           </HeaderName>
-          <HeaderNavigation UserProfile path="/user-profile" />
+          <HeaderNavigation aria-label="IBM [Platform]">
             <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
             <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
             <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
@@ -70,7 +70,7 @@ export const SideNavRailWHeader = (args) => (
               
               tooltipAlignment="end"
             >
-              <SwitcherIcon size={20} />
+              <UserProfile path="/user-profile" />
             </HeaderGlobalAction>
           </HeaderGlobalBar>
           <SideNav
