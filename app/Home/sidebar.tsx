@@ -1,6 +1,8 @@
 // @ts-nocheck
 
 "use client";
+import { currentUser } from "@clerk/nextjs";
+import { UserProfile } from "@clerk/nextjs";
 
 import {
   SideNav,
@@ -43,10 +45,10 @@ export const SideNavRailWHeader = (args) => (
             isActive={isSideNavExpanded}
             aria-expanded={isSideNavExpanded}
           />
-          <HeaderName href="#" prefix="IBM">
-            [Platform]
+          <HeaderName href="#" prefix="Panaptico">
+            [Account]
           </HeaderName>
-          <HeaderNavigation aria-label="IBM [Platform]">
+          <HeaderNavigation UserProfile path="/user-profile" />
             <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
             <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
             <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
@@ -93,28 +95,18 @@ export const SideNavRailWHeader = (args) => (
                   </HeaderMenu>
                 </HeaderSideNavItems>
               )}
-              <SideNavMenu renderIcon={Fade} title="Category title">
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-              </SideNavMenu>
-              <SideNavMenu renderIcon={Fade} title="Category title">
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-                <SideNavMenuItem aria-current="page" href="https://www.carbondesignsystem.com/">
-                  Link
-                </SideNavMenuItem>
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-              </SideNavMenu>
-              <SideNavMenu renderIcon={Fade} title="Category title">
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-                <SideNavMenuItem href="https://www.carbondesignsystem.com/">Link</SideNavMenuItem>
-              </SideNavMenu>
+
               <SideNavLink renderIcon={Fade} href="https://www.carbondesignsystem.com/">
-                Link
+                Clusters
               </SideNavLink>
               <SideNavLink renderIcon={Fade} href="https://www.carbondesignsystem.com/">
-                Link
+                Organization
+              </SideNavLink>
+              <SideNavLink renderIcon={Fade} href="https://www.carbondesignsystem.com/">
+                Settings
+              </SideNavLink>
+              <SideNavLink renderIcon={Fade} href="https://www.carbondesignsystem.com/">
+                Support
               </SideNavLink>
             </SideNavItems>
           </SideNav>
