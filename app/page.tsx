@@ -24,7 +24,7 @@ export default class Page extends Component<PageProps> {
         <SignedIn>
           <UserButton />
         </SignedIn>
-        <Component {...pageProps} publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY} secretKey={'sk_live_M3X8HIA9j5QqqAceZNQWGnhIrjjQhhj5lWgr4FiNQO'} ></Component>
+        <Component {...pageProps} publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY} secretKey={process.env.CLERK_SECRET_KEY} ></Component>
       </ClerkProvider>
     );
   }
