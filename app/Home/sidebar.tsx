@@ -57,15 +57,15 @@ export const SideNavRailWHeader = (args) => (
             </HeaderMenu>
           </HeaderNavigation>
           <HeaderGlobalBar>
-            <HeaderGlobalAction aria-label="Search" onClick={action("search click")}>
+            <HeaderGlobalAction aria-label="Search">
               <Search size={20} />
             </HeaderGlobalAction>
-            <HeaderGlobalAction aria-label="Notifications" onClick={action("notification click")}>
+            <HeaderGlobalAction aria-label="Notifications">
               <Notification size={20} />
             </HeaderGlobalAction>
             <HeaderGlobalAction
               aria-label="App Switcher"
-              onClick={action("app-switcher click")}
+              
               tooltipAlignment="end"
             >
               <SwitcherIcon size={20} />
