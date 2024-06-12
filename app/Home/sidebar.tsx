@@ -2,7 +2,7 @@
 
 "use client";
 import { currentUser } from "@clerk/nextjs";
-import { UserProfile } from "@clerk/nextjs";
+// import { UserProfile } from "@clerk/nextjs";
 
 import {
   SideNav,
@@ -33,6 +33,7 @@ import {
   DataCenter,
   Switcher as SwitcherIcon,
 } from "@carbon/icons-react";
+import UserProfile from '../user-profile'
 // import '@carbon/charts/styles.css';
 export const SideNavRailWHeader = (args) => (
   <HeaderContainer
@@ -70,7 +71,7 @@ export const SideNavRailWHeader = (args) => (
               
               tooltipAlignment="end"
             >
-              <UserProfile path="/user-profile" />
+             <UserProfile />
             </HeaderGlobalAction>
           </HeaderGlobalBar>
           <SideNav
