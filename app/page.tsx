@@ -1,31 +1,8 @@
-"use client"
-import Link from 'next/link';
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
-import React, { Component } from 'react';
-
-interface PageProps {
-  pageProps: any;
-}
-
-export default class Page extends Component<PageProps> {
-  render() {
-    const { pageProps } = this.props;
-    return (
-      <ClerkProvider>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-        <React.Fragment>
-          {React.createElement(Component, {
-            ...pageProps,
-            publishableKey: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
-            secretKey: process.env.CLERK_SECRET,
-          })}
-        </React.Fragment>
-      </ClerkProvider>
-    );
-  }
+export default function Home() {
+  return (
+    <div>
+      <h1>Welcome to my website</h1>
+      {/* Your main content goes here */}
+    </div>
+  );
 }
