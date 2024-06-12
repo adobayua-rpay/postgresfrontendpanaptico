@@ -33,7 +33,7 @@ import {
   DataCenter,
   Switcher as SwitcherIcon,
 } from "@carbon/icons-react";
-import UserProfile from '../user-profile'
+import UserProfile from '../user-profile/page'
 // import '@carbon/charts/styles.css';
 export const SideNavRailWHeader = (args) => (
   <HeaderContainer
